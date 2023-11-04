@@ -1,0 +1,15 @@
+{% extends 'usuarios/base.html' %}
+{% block conteudo %}
+
+<div class="container">
+    {% for user in usuarios %}
+        <div class="usuario">
+            <p>{{user.nome}}</p>
+            <p>{{user.idade}}</p>
+            <p>{{user.id_usuario}}</p>
+            <hr>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
